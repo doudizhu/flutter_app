@@ -1,4 +1,6 @@
 void main(){
+/*  
+  // 一、基础类型&变量
   print('hello world');
   // 单行注释
   /**
@@ -36,4 +38,48 @@ void main(){
   print("the sum of $a and $b is ${a + b}");
 
   // 建议：使用["my name is $name"] 替代["my name is" + name]
+*/
+
+
+  // 二、分支
+  var salary = 20000;
+  // if(salary > 2000){
+  //   print("$salary 大于2000");
+  // }else if(salary < 2000){
+  //   print("$salary 小于2000");
+  // }else{
+  //   print("$salary 等于2000");
+  // }
+
+  int a = 2;
+  int b = 3;
+  if(a<b){
+    print('$a is smaller');
+  }else{
+    print('$b is smaller');
+  }
+  // ? : 表达式
+  a < b ? print('$a is smaller') : print('$b is smaller');
+  // ?? 表达式
+  // String name = '米斯特吴';
+  String name = null;
+  String nameToPrint = name ?? '27732357@qq.com';
+  print(nameToPrint);
+
+  // switch
+  String grade = 'A';
+  switch(grade){
+    case 'A':
+      print('very good');
+      break;
+    case 'B':
+      print('good');
+      break;
+    case 'C':
+      print('good enougth, work hard');
+      break;
+    default:
+      print('you have failed');
+      break;
+  }
 }
